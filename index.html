@@ -1,0 +1,76 @@
+<html>
+
+
+
+<head>
+
+<title> Game | King Amda </title>
+
+<style>
+
+h1 {
+		color : red ;
+	}
+	
+body {
+			background-color : #F6F4F4 ;
+
+	}
+
+ </style> 
+
+</head>
+
+
+
+
+<body>
+
+<h1> What Number Is I Am Thinking... </h1>
+<p> What Number Is I Am Thinking.. </p>
+<p> ***Number Between 1 - 10 ***</p>
+<p> <input type ="text" id = "guess"> </p>
+<p> <button id = "guesschek"> Guess ! </button> </p>
+
+
+<script type = "text/javascript">
+
+
+
+
+
+document.getElementById ("guesschek").onclick= function () {
+
+
+
+var randomnumber = Math.random() ;
+randomnumber = randomnumber *11 ;
+randomnumber = Math.floor (randomnumber) ;
+
+if  ( document.getElementById ("guess").value == randomnumber ) {
+
+alert ("Conrejulations Bro !! You Are Win!! Common !!");
+}
+
+else {
+ alert (" Oh ! Nope !! You Are Faild... Try Again..") ;
+
+		}
+	
+ 
+
+}
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>
